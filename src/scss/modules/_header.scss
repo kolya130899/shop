@@ -1,0 +1,20 @@
+.header-wrapper {
+  padding: 10px 15px;
+}
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__logo {
+    text-transform: uppercase;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #fff;
+    max-width: 200px;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
