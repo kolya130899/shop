@@ -1,0 +1,22 @@
+.footer-wrapper {
+  background-color: rgb(238, 238, 238);
+}
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  &__logo {
+    max-width: 170px;
+    margin: 0 auto;
+    & > img {
+      width: 100%;
+    }
+  }
+  &__disclaimer {
+    margin: 30px 0;
+  }
+  &__copyrights {
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+}
