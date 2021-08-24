@@ -12,7 +12,7 @@ export function Footer() {
           <img src={logo} alt="" />
         </div>
         <p className="footer__disclaimer">
-          This is the pet project created to test own skills using React.js.
+          This is the pet project created to test my own skills using React.js.
         </p>
 
         <p className="footer__copyrights">

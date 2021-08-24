@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Footer } from "./components/Footer";
-import { Form } from "./components/Form";
+import { FormWithComponent } from "./components/FormWithComponent";
+// import { FormWithHook } from "./components/FormWithHook";
 import { Header } from "./components/Header";
 
 import "./scss/style.scss";
@@ -8,7 +9,8 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <Form />
+      <FormWithComponent title="Form" />
+      {/* <FormWithHook /> */}
       <Footer />
     </Fragment>
   );
