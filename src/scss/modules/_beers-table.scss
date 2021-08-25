@@ -1,0 +1,32 @@
+.beers-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  &,
+  & td,
+  & th {
+    border: 1px solid #000;
+    padding: 5px 10px;
+  }
+
+  & td {
+    max-width: 200px;
+    text-align: center;
+  }
+
+  & thead {
+    background-color: rgb(224, 223, 223);
+  }
+}
+.beers-buttons {
+  text-align: center;
+  margin-top: 20px;
+  & button {
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  & span {
+    font-weight: 800;
+    font-size: 1.5em;
+    margin: 0 10px;
+  }
+}
