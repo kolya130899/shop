@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Footer } from "./components/Footer";
-import { FormWithComponent } from "./components/FormWithComponent";
+// import { FormWithComponent } from "./components/FormWithComponent";
+import { FormWithYupValidation } from "./components/FormWithYupValidation";
 // import { FormWithHook } from "./components/FormWithHook";
 import { Header } from "./components/Header";
 
@@ -9,7 +10,8 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <FormWithComponent title="Form" />
+      <FormWithYupValidation title="Yup validation Form" />
+      {/* <FormWithComponent title="Form" /> */}
       {/* <FormWithHook /> */}
       <Footer />
     </Fragment>
