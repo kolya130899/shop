@@ -1,17 +1,23 @@
 import { Fragment } from "react";
-import { Footer } from "./components/Footer";
-import { FormWithYupValidation } from "./components/FormWithYupValidation";
-// import { FormWithComponent } from "./components/FormWithComponent";
-// import { FormWithHook } from "./components/FormWithHook";
 import { Header } from "./components/Header";
-import { Beers } from "./components/Beers";
+import { Catalog } from "./components/Catalog/Catalog";
+import { Beers } from "./components/Beers/Beers";
+import { FormWithYupValidation } from "./components/Form/FormWithYupValidation";
+import { Footer } from "./components/Footer";
+// import { FormWithComponent } from "./components/Form/FormWithComponent";
+// import { FormWithHook } from "./components/Form/FormWithHook";
 
 import "./scss/style.scss";
+import { useFetchData } from "./hooks/useFetchData";
 function App() {
+  const URL = process.env.REACT_APP_API_URL;
+  const beers = useFetchData(URL);
+
   return (
     <Fragment>
       <Header />
-      <Beers />
+      <Catalog {...{ beers }} />
+      <Beers {...{ beers }} />
       <FormWithYupValidation title="Yup validation Form" />
       {/* <FormWithComponent title="Form" /> */}
       {/* <FormWithHook /> */}

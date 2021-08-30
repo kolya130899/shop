@@ -1,20 +1,7 @@
-import axios from "axios";
-import { useEffect, useState, useReducer } from "react";
+import { useReducer } from "react";
 import { BeersItemsQuantityControl } from "./BeersItemsQuantityControl";
 import { BeersPagesControl } from "./BeersPagesControl";
 import { BeersTable } from "./BeersTable";
-
-const URL = process.env.REACT_APP_API_URL;
-
-const fetchData = async () => {
-  return await axios
-    .get(`${URL}`)
-    .then(res => {
-      const { data } = res;
-      return data;
-    })
-    .catch(err => console.error(err));
-};
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -37,12 +24,12 @@ const reducer = (state, action) => {
   }
 };
 
-export const Beers = () => {
-  const [beers, setBeers] = useState([]);
+export const Beers = props => {
   const [paginationState, dispatch] = useReducer(reducer, {
     page: 1,
     perPage: 15,
   });
+  const { beers } = props;
 
   const lastPageIndex = Math.ceil(beers.length / paginationState.perPage);
   const lastElementIndex = paginationState.page * paginationState.perPage;
@@ -50,12 +37,6 @@ export const Beers = () => {
     paginationState.perPage - lastElementIndex
   );
   const pageItems = beers.slice(firstElementIndex, lastElementIndex);
-
-  useEffect(() => {
-    fetchData().then(data => {
-      setBeers(data);
-    });
-  }, []);
 
   return (
     <div className="beers block">

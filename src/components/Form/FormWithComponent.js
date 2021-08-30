@@ -1,5 +1,5 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import { validate } from "../features/validation";
+import { validate } from "../../features/validation";
 
 export const FormWithComponent = props => {
   return (

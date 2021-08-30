@@ -4,9 +4,15 @@
 @import "modules/_footer.scss";
 @import "modules/form";
 @import "modules/validation";
+
+// BEERS
 @import "modules/beers/table";
 @import "modules/beers/pages-control";
 @import "modules/beers/items-control";
+
+// CATALOG
+@import "modules/catalog/catalog";
+@import "modules/catalog/catalog-item";
 
 html,
 body {
@@ -37,4 +43,5 @@ img {
   font-size: 2em;
   text-align: center;
   font-weight: 800;
+  margin-bottom: 1em;
 }
