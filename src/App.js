@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Footer } from "./components/Footer";
-// import { FormWithComponent } from "./components/FormWithComponent";
 import { FormWithYupValidation } from "./components/FormWithYupValidation";
+// import { FormWithComponent } from "./components/FormWithComponent";
 // import { FormWithHook } from "./components/FormWithHook";
 import { Header } from "./components/Header";
 import { Beers } from "./components/Beers";

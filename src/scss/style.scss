@@ -4,7 +4,9 @@
 @import "modules/_footer.scss";
 @import "modules/form";
 @import "modules/validation";
-@import "modules/beers-table";
+@import "modules/beers/table";
+@import "modules/beers/pages-control";
+@import "modules/beers/items-control";
 
 html,
 body {
