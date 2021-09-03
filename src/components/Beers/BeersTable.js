@@ -1,4 +1,6 @@
 export const BeersTable = props => {
+  const { beers } = props;
+
   return (
     <table className="beers-table">
       <thead>
@@ -19,7 +21,7 @@ export const BeersTable = props => {
         </tr>
       </thead>
       <tbody>
-        {props.beers.map(beer => (
+        {beers.map(beer => (
           <tr key={beer.id}>
             <th>{beer.id}</th>
             <td>{beer.name}</td>

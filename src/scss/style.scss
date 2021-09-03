@@ -2,13 +2,17 @@
 @import "modules/normalize";
 @import "modules/_header.scss";
 @import "modules/_footer.scss";
-@import "modules/form";
-@import "modules/validation";
+
+// FORM
+@import "modules/form/form";
+@import "modules/form/validation";
 
 // BEERS
 @import "modules/beers/table";
-@import "modules/beers/pages-control";
-@import "modules/beers/items-control";
+
+// PAGINATION CONTROLS
+@import "modules/pagination-controls/pages-control";
+@import "modules/pagination-controls/items-control";
 
 // CATALOG
 @import "modules/catalog/catalog";
@@ -40,7 +44,7 @@ img {
 }
 
 .page-title {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   font-weight: 800;
   margin-bottom: 1em;

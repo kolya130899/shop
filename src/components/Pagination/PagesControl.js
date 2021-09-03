@@ -1,11 +1,11 @@
-export const BeersPagesControl = ({
+export const PagesControl = ({
   paginationState,
   lastPageIndex,
   dispatch,
   ...props
 }) => {
   return (
-    <div className="beers-pages-control">
+    <div className="pages-control">
       <button
         id="decrease"
         onClick={() =>

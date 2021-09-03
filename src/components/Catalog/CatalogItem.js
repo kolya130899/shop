@@ -3,15 +3,12 @@ export const CatalogItem = props => {
 
   return (
     <div className="catalog-item">
-      <p className="catalog-item__tag">{beer.tagline}</p>
+      <p className="catalog-item__tag">{beer.name}</p>
       <div className="catalog-item__info">
         <img src={beer.image_url} alt="" />
         <div className="goods-charachteristics">
           <ul>
-            <li>
-              <b>{beer.name}</b>
-            </li>
-            <li>First brewed {beer.first_brewed}</li>
+            <li>First brewed - {beer.first_brewed}</li>
             <li>ABV - {beer.abv}</li>
             <li>IBU - {beer.ibu}</li>
             <li>FG - {beer.target_fg}</li>

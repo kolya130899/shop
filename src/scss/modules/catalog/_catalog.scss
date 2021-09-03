@@ -1,10 +1,12 @@
+.catalog-section {
+  padding: 40px 15px;
+}
 .catalog {
   font-family: Georgia, "Times New Roman", Times, serif;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 40px 15px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }

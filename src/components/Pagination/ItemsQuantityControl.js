@@ -1,10 +1,10 @@
-export const BeersItemsQuantityControl = ({ dispatch }) => {
+export const ItemsQuantityControl = ({ dispatch }) => {
   const renderButton = type => {
     return <button onClick={() => dispatch({ type: type })}>{type}</button>;
   };
 
   return (
-    <div className="beers-item-control">
+    <div className="items-quantity-control">
       <p>Items per page</p>
       {renderButton("2")}
       {renderButton("5")}

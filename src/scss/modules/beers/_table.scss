@@ -16,5 +16,8 @@
 
   & thead {
     background-color: rgb(224, 223, 223);
+    & th {
+      cursor: pointer;
+    }
   }
 }
