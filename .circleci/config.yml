@@ -8,6 +8,4 @@ jobs:
     executor: docker-executor
     steps:
       - checkout
-      - run:
-        name: Build project
-        command: echo "Project built"
+      - run: echo "Project built"
