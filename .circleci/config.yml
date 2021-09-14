@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Build
-          command: echo "Project built"
+          command: npm run build
 workflows:
   build_project:
     jobs:
