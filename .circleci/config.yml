@@ -13,8 +13,7 @@ jobs:
       - run: npm run-script build
       - persist_to_workspace:
           root: ~/repo
-          paths:
-            - ~/
+          paths: .
 workflows:
   build_project:
     jobs:
