@@ -9,5 +9,9 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Build project
+        name: Build
         command: echo "Project built"
+workflows:
+  build_project:
+    jobs:
+      - build
