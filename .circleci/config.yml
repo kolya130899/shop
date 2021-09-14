@@ -5,14 +5,14 @@ executors:
       - image: cimg/node:16.8.0
 jobs:
   build:
-    working_directory: ~/my-build
+    working_directory: ~/repo
     executor: docker-executor
     steps:
       - checkout
       - run: npm install
       - run: npm run-script build
       - persist_to_workspace:
-          root: ~/
+          root: ~/repo
           paths:
             - ~/my-build
 workflows:
