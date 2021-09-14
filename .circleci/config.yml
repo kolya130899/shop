@@ -8,9 +8,8 @@ jobs:
     executor: docker-executor
     steps:
       - checkout
-      - run:
-          name: Build
-          command: npm run-script build
+      - run: npm install
+      - run: npm run-script build
 workflows:
   build_project:
     jobs:
