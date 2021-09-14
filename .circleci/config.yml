@@ -12,6 +12,7 @@ jobs:
       - run: npm install
       - run: npm run-script build
       - persist_to_workspace:
+          root: ~/
           paths:
             - ~/my-build
 workflows:
