@@ -5,6 +5,7 @@ executors:
       - image: cimg/node:16.8.0
 jobs:
   build:
+    working_directory: ~/my-build
     executor: docker-executor
     steps:
       - checkout
